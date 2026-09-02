@@ -43,7 +43,7 @@ MCP tool for an agent. That is a design rule, not a feature list.
 
 | | |
 |---|---|
-| One endpoint, six mainnets | Ethereum, Base, Arbitrum, Optimism, Polygon, BNB — JSON-RPC in, one key, one meter |
+| One endpoint, six mainnets | Ethereum, Base, Arbitrum, Optimism, Polygon, Solana — JSON-RPC in, one key, one meter |
 | Multi-provider routing | requests move to another provider when one degrades; you see it on /status |
 | Toolbox | gas, token prices, name resolution, transaction status, contract ABI + decoding, EVM utilities — one call instead of many |
 | Per-key control | budgets, service switches and spend caps per key — for people and for agents |
