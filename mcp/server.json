@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.flexyield/gateway",
+  "description": "Blockchain RPC gateway: six mainnets, multi-provider failover, toolbox, per-agent keys. Free tier.",
+  "title": "FlexYield \u2014 blockchain RPC gateway",
+  "websiteUrl": "https://flexyield.io/mcp",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://flexyield.io/mcp/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <FlexYield API key> \u2014 free tier at https://flexyield.io/registration/new",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
