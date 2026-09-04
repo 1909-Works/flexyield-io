@@ -72,7 +72,8 @@ Contact: hello@flexyield.io.
 This is the public front door: the MCP registry manifest (`mcp/server.json`),
 directory metadata (`glama.json`), and this README. The gateway itself is
 closed source. Issues here are welcome for listing and metadata questions;
-product support: hello@flexyield.io (a ticket console with evidence attached
-to every ticket is in the next release).
+product support runs through the console at https://flexyield.io/support — every
+ticket arrives with the failing call, your limits and the chain status attached;
+hello@flexyield.io works too.
 
 *Made in Austria.*
