@@ -18,18 +18,23 @@ on published on a public status page.
 - **Try it live, no signup:** https://flexyield.io/toolbox
 - **Docs:** https://flexyield.io/docs · **Measured status, public:** https://flexyield.io/status
 - **Pricing:** https://flexyield.io/pricing · **Free tier:** https://flexyield.io/registration/new
-- **For agents:** MCP server `io.flexyield/gateway` in the official MCP registry ·
-  skill: https://flexyield.io/skill.md · site summary: https://flexyield.io/llms.txt
+- **For agents:** a key without signup — `POST https://flexyield.io/keys` (MCP `get_key`) ·
+  pay per call with USDC on Base over x402 — `GET https://flexyield.io/x402` ·
+  MCP server `io.flexyield/gateway` · skill: https://flexyield.io/skill.md ·
+  agent card: https://flexyield.io/.well-known/agent-card.json · site summary: https://flexyield.io/llms.txt
 
 ## Agent-first, human-friendly
 
 Every capability exists twice, from the same code: a page for a person and an
 MCP tool for an agent. That is a design rule, not a feature list.
 
-- **Agents are customers.** An agent claims its own key by signing a message —
-  no human in the loop, no wallet UX forced on anyone. Each key carries a
-  budget and a service menu its owner sets; a robot may reach the charger,
-  not the bank.
+- **Agents are customers.** Three doors, nothing logs in: an agent gets a
+  capability key with no signup, binds it to a wallet by signature for a
+  persistent identity, pays per call in USDC, or hands its owner a claim code
+  and inherits the owner's plan. Each key carries a budget and a service menu
+  its owner sets; a robot may reach the charger, not the bank. The agent menu
+  (`what_can_i_do`, `quote`, `pick_chain`, `pick_route`) prices its own volume
+  on every lane and recommends from measured data.
 - **Fences carry doorways.** Every limit answers with what to do next — a
   structured error with the path to the fix, never a bare 429. When a call
   fails, the error carries a `request_id`; an agent files it as a ticket and
