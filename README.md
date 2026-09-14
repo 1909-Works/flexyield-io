@@ -2,6 +2,10 @@
   <img src="https://flexyield.io/icon.png" width="72" alt="FlexYield">
 </p>
 
+<p align="center">
+  <a href="https://glama.ai/mcp/connectors/io.flexyield/flex-yield-blockchain-rpc-gateway"><img src="https://glama.ai/mcp/connectors/io.flexyield/flex-yield-blockchain-rpc-gateway/badges/score.svg" alt="FlexYield — blockchain RPC gateway MCP connector – tool definition quality and endpoint health on Glama"></a>
+</p>
+
 # FlexYield — the access layer for the machine economy on-chain
 
 Software is starting to buy its own infrastructure. An AI agent that needs to
@@ -33,7 +37,7 @@ MCP tool for an agent. That is a design rule, not a feature list.
   persistent identity, pays per call in USDC, or hands its owner a claim code
   and inherits the owner's plan. Each key carries a budget and a service menu
   its owner sets; a robot may reach the charger, not the bank. The agent menu
-  (`what_can_i_do`, `quote`, `pick_chain`, `pick_route`) prices its own volume
+  (`what_can_i_do`, `get_quote`, `recommend`) prices its own volume
   on every lane and recommends from measured data.
 - **Fences carry doorways.** Every limit answers with what to do next — a
   structured error with the path to the fix, never a bare 429. When a call

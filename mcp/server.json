@@ -1,11 +1,23 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.flexyield/gateway",
-  "description": "Blockchain RPC gateway for agents: six mainnets with measured multi-provider failover, a key without signup (get_key), pay per call with USDC (x402 on Base), toolbox, per-agent budgets, statements and tickets over MCP.",
+  "description": "RPC gateway for agents: six mainnets, measured failover, a key without signup, pay per call in USDC.",
   "title": "FlexYield \u2014 blockchain RPC gateway",
   "websiteUrl": "https://flexyield.io/mcp",
-  "version": "1.1.0",
+  "version": "1.3.1",
   "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://flexyield.io/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <FlexYield API key> \u2014 get one without signup: POST https://flexyield.io/keys (or the get_key tool); free tier at https://flexyield.io/registration/new",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
     {
       "type": "sse",
       "url": "https://flexyield.io/mcp/sse",
